@@ -36,6 +36,8 @@ namespace AESAndRSATest
             var signRst = rsa.Sign(contentRsa, priKey);
             //使用公钥验证签名
             var isSign = rsa.Verify("06FX0qCJuJjgriYv","HC4ojHLqS0876Vv8QMPxX2R/cFYu9wtiYwle8hnOMxZkZLU+8cujzD3LzJRHzvcxHceHpzoBJE/xRtKJMZx9e9r5Tci6C+tFLWSq6A6JNLGaw9DzbaSPaeAmrrxrSlwUnQwrDBqCnwDlLUhky0pVfC64pWV7osFCbCKtasSz1zFlpvgXLKg8a0yN6ocH8RFyjSmaF87y2ol9Ze1dmg5UKICNwc5Y9iMzx+A5POczpZApKhu5KD9AANYLjmXPSvZADMuKAl443xtQ01Xdn18mTgIWZXCW1t4BloxNXL3WOFH68eZmKKPAF78VBeiEd3b93rCAa3T/em3GwJ8V4zKA9Q==", pubKey);
+
+            Console.ReadLine();
         }
     }
 }
