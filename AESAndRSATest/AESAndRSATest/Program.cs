@@ -16,7 +16,7 @@ namespace AESAndRSATest
             string aesIV = "b6f262e1cf2a4ca2";
             string content = "{\"orderNo\":\"order1552809255\",\"subject\":\"重庆火锅\",\"amount\":\"100\",\"notifyUrl\":\"http %3A%2F%2Fdemo-php%2Fnotice%2Fpay.php\",\"payType\":\"0\",\"source\":\"ZFBZF\"}";
             string enstr = AESHelper.AES_Encrypt(content, aesKey, aesIV);
-
+            Console.WriteLine("AES加密后的结果:{0}", enstr);
             //解密
            // string destr = "hm9RsISvoHwKz30NeRAEt3ykTR0l0mJ2xyfl3AOr9/sVIvAwGNKGL2EtFiOWJNAbTnb7IDn+qmicXoQXR+rtlo0f78ifI6T0RQmfn7BLYVUTmSDOlW+ymXsaKNbpZDpLZG3SpxNm4Rqv7E2Ca7KmFHjZXI1Nlto4zwiD4E5MWuJZ/NFXtAQfF+M68rT/fnkLGGE+Zlq0y8rjP9EkXDfl+A==";
             content = AESHelper.AES_Decrypt(enstr, aesKey, aesIV);
